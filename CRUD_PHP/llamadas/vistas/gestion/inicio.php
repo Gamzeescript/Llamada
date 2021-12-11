@@ -1,6 +1,6 @@
 <a name="" id="" class="btn btn-success" href="?controlador=gestion&accion=crear" role="button">Agregar Gestion</a>
 
-<table class="table table-bordered">
+<table id="gestion" class="table table-bordered">
     <thead>
         <tr>
             <th>Id</th>
@@ -33,3 +33,9 @@
         <?php } ?>
     </tbody>
 </table>
+
+<script>
+$(document).ready(function() {
+    $('#gestion').DataTable();
+} );    
+</script>

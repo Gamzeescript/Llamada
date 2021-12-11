@@ -1,6 +1,6 @@
 <a name="" id="" class="btn btn-success" href="?controlador=tipo_llamada&accion=crear" role="button">Agregar Tipo de Llamada</a>
 
-<table class="table table-bordered">
+<table id="tipollamada" class="table table-bordered">
     <thead>
         <tr>
             <th>Id</th>
@@ -25,3 +25,9 @@
         <?php } ?>
     </tbody>
 </table>
+
+<script>
+$(document).ready(function() {
+    $('#tipollamada').DataTable();
+} );    
+</script>

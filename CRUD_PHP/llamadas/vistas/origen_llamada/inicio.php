@@ -1,6 +1,6 @@
 <a name="" id="" class="btn btn-success" href="?controlador=origen_llamada&accion=crear" role="button">Agregar Origen de Llamada</a>
 
-<table class="table table-bordered">
+<table id="origenllamada" class="table table-bordered">
     <thead>
         <tr>
             <th>Id</th>
@@ -25,3 +25,9 @@
         <?php } ?>
     </tbody>
 </table>
+
+<script>
+$(document).ready(function() {
+    $('#origenllamada').DataTable();
+} );    
+</script>
